@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Modules</title>
+</head>
+<body>
+	Browserify, Webpack, jspm | coffeescript, typescript, ES6 (babel)
+	<div id="a"></div>
+	<div id="b"></div>
+<!--
+	<script src="bundle.js"></script>
+-->
+
+	<script src="jspm_packages/system.js"></script>
+	<script src="config.js"></script>
+	<script src="bundle.js"></script>
+	<script>
+		System.import('src/entry.js');
+	</script>
+
+
+</body>
+</html>
